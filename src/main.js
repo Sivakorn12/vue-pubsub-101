@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import pubsub from 'pubsub-js'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+import './assets/css/main.css'
+
+Vue.use(Buefy)
 
 Vue.config.productionTip = false
 Vue.prototype.$pubsub = pubsub

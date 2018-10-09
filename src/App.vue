@@ -1,13 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="columns main-view">
+      <div class="column">
+        <level-log/>
+      </div>
+      <div class="column">
+        <chat/>
+      </div>
+      <div class="column">
+        <widget/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import levelLog from './pages/log/index'
+import chat from './pages/chat/index'
+import widget from './pages/widget/index'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    chat,
+    widget,
+    levelLog
+  }
 }
 </script>
 
