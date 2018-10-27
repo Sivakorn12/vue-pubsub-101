@@ -20,7 +20,7 @@ export default {
     }
   },
   created () {
-    this.$pubsub.subscribe('SendMessage', this.pushLogMessage)
+    this.$pubsub.subscribe('chat.message', this.pushLogMessage)
     this.$pubsub.subscribe('chat.notification', this.pushLogMessage)
   },
   methods: {
