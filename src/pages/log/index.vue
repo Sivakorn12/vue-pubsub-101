@@ -21,7 +21,7 @@ export default {
   },
   created () {
     this.$pubsub.subscribe('SendMessage', this.pushLogMessage)
-    this.$pubsub.subscribe('Notification', this.pushLogMessage)
+    this.$pubsub.subscribe('chat.notification', this.pushLogMessage)
   },
   methods: {
     pushLogMessage (channel, message) {
