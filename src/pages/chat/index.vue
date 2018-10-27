@@ -41,7 +41,7 @@ export default {
         this.$nextTick(() => {
           this.$refs.conversation.scrollTop = this.$refs.conversation.scrollHeight
         })
-        this.$pubsub.publish('SendMessage', data)
+        this.$pubsub.publish('chat.message', data)
       }
     },
     pushLogNoti (channel, message) {
