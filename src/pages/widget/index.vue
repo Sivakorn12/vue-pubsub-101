@@ -13,16 +13,6 @@
 </template>
 
 <script>
-// import socketCluster from 'socketcluster-client'
-
-// const options = {
-//   hostname: 'chat-socket.sellsuki.com',
-//   secure: true,
-//   port: 8000
-// }
-
-// let socket = socketCluster.connect(options)
-
 export default {
   name: 'Widget',
   data () {
